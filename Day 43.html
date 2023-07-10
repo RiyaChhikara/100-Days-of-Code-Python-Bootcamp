@@ -1,0 +1,203 @@
+<!--Day 43
+CSS: Cascading Style Sheets 
+Others like Less, Sass
+-->
+
+<!--- There are three ways of adding CSS:
+Inline: <tag style="css"/>
+Internal: <style> css </style>
+External: <link href="style.css"/>
+--->
+
+<!-- Inline: When we want to edit only one element -->
+<html style="background: blue">
+</html>
+
+<!DOCTYPE html>
+<html lang="en", style="background:blue">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Inline</title>
+</head>
+
+<body>
+<h1>Style Me in Blue!</h1>
+</body>
+
+</html>
+
+<!--Internal: When we want to edit only one html document-->
+<html>
+  <head>
+    <style>
+      html{
+        background:red;
+      }
+    </style>
+  </head>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    html{
+      background:red;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>Internal</title>
+</head>
+
+<body>
+<h1>Style Me in Red!</h1>
+</body>
+
+</html>
+
+<!--External: When we want to edit multiple page website-->
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+      />
+  </head>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Adding CSS</title>
+</head>
+
+<body>
+  <h1>Three Methods of Adding CSS</h1>
+  <ol>
+    <li><a href="./inline.html">Inline</a></li>
+    <li><a href="./internal.html">Internal</a></li>
+    <li><a href="./external.html">External</a></li>
+  </ol>
+
+</body>
+
+</html>
+
+<!--- Element Selector-->
+h1{
+  color:blue
+}
+
+<!--- Class Selector: For many elements-->
+.red-heading {
+  color:red
+}
+
+<!--- Id Selector: For one element-->
+#main {
+  color: red
+}
+<h2 id="main">Red</h2>
+
+<!--- Attribute Selector-->
+p[draggable]{
+  color:red
+}
+
+<!-- Universal Selector-->
+*{
+  color: red
+}
+
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+li[value="4"]{
+  color:blue
+}
+
+p{color:red;}
+
+*{text-align: center;}
+
+#id-selector-demo{color:green;}
+
+.note{
+  font-size: 20px;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <h1>CSS Selectors</h1>
+  <h2>Applying CSS to Different Parts of HTML</h2>
+  <!-- TODO 1: Set the CSS for all paragraph tags to "color: red" -->
+  <p class="note">1. The element selector targets elements based on their HTML tag name.</p>
+
+  <ol>
+    <!-- TODO 2: Set the CSS for all elements with a class of "note" to "font-size: 20px" -->
+    <li class="note" value="2">Class selectors target elements based on the value of the class attribute.</li>
+
+    <!-- TODO 3: Set the CSS for the element with an id of "id-selector-demo" to "color: green" -->
+    <li class="note" id="id-selector-demo" value="3">ID selectors target elements based on the value of the id
+      attribute.</li>
+
+    <!-- TODO 4: Set the CSS for the li elements that have the "value" attribute set to "4" to have "color: blue" -->
+    <li class="note" value="4">Attribute selectors target elements based on their attributes and values.</li>
+
+    <!-- TODO 5: Set all elements to have "text-align: center" -->
+    <li class="note" value="5">The universal selector targets all elements.</li>
+  </ol>
+</body>
+
+</html>
+
+.color-title{
+    font-weight: normal;
+}
+
+#orange{
+    color:orange;
+}
+
+#green{
+    color:green;
+}
+
+#yellow{
+    color:yellow;
+}
+
+#blue{
+    color:blue;
+}
+
+#red{
+    color:red;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+
+
