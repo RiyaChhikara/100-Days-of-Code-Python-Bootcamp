@@ -1,0 +1,242 @@
+<!-- 
+Day 44
+Color Properties and their values
+Try www.colorhunt.co to find hex codes
+-->
+
+html {
+  background-color:red
+}
+h1 {
+  color:blue
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Colors</title>
+  <style>
+    html {
+      background-color: antiquewhite;
+    }
+    h1 {
+      color: whitesmoke;
+      background-color: darkseagreen;
+    }
+
+  h2 {
+    color: #FAF8F1;
+    background-color: #C58940;
+  }
+  /* Write your CSS code here. */
+    /* 1. Make the background of the webpage "antiquewhite"
+    2. Make the h1 "whitesmoke"
+    3. Make the background of the h1 "darkseagreen"
+    4. Make the h2 #FAF8F1
+    5. Make the background of the h2 "#C58940" */
+  </style>
+</head>
+
+<body>
+  <h1>Hello</h1>
+  <h2>World</h2>
+</body>
+
+</html>
+
+<!--- Font Properties 
+1 px: 1/96th of an inch 
+1 pt: 1/72nd of an inch 
+1 em: 100% of parent 
+1 rem: 100% of root
+--->
+h1 {
+  font-size: 20px;
+}
+h1{
+  font-weight: 200
+}
+h1 {
+  font-family: Helvetica, sans-serif
+}
+h1 {
+  text-align: center
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Properties</title>
+  <style>
+    /* 6. Change the the root (html element) font size to 30px --> */
+    html {
+      font-size: 30px;
+    }
+
+    body {
+      background-color: cornflowerblue;
+      color: white;
+      font-size: 18px;
+    }
+
+    /* 1. Change the color of <p>Color</p> to "coral" color. */
+    #color {
+      color: coral;
+    }
+
+    /* 2. Change the font size of <p>Font Size</p> to to 2X the size of the root (html) element. */
+    #size {
+      font-size: 2rem;
+    }
+
+    /* 3. Change the font weight of <p>Font Weight</p> to 900. */
+    #weight {
+      font-weight: 900;
+    }
+
+    /* 4. Change the font family of <p>Font Family</p> to the Google font Caveat with regular (400) font weight.
+      Link: https://fonts.google.com/specimen/Caveat */
+    #family {
+      font-family: 'Caveat', cursive;
+    }
+
+    /* 5. Change the <p>Text Align</p> to right align. */
+    #align {
+      text-align: right;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Important CSS Properties</h1>
+  <p id="color">Color</p>
+  <p id="size">Font Size</p>
+  <p id="weight">Font Weight</p>
+  <p id="family">Font Family</p>
+  <p id="align">Text Align</p>
+</body>
+
+</html>
+
+<!--- Inspecting CSS ----->
+
+<!--- CSS Box Model ----->
+border: 10px solid black;
+border-top: 0px;
+
+<!--- Content Division Element ----->
+<div>Acts as a container that stores elements</div>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model</title>
+  <style>
+    div {
+      height: 200px;
+      width: 200px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    #first {
+      background-color: cadetblue;
+      padding: 20px;
+      border: 10px solid black;
+    }
+
+    #second {
+      background-color: gold;
+      border: solid black;
+      border-width: 20px 10px;
+      margin-left: 260px;
+    }
+
+    #third {
+      background-color: indianred;
+      border: 10px solid black;
+      margin-left: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="first">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+      id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+      dolor metus, laoreet ac convallis sit amet, efficitur sed dolor. </p>
+  </div>
+  <div id="second">
+
+  </div>
+  <div id="third">
+
+  </div>
+</body>
+
+</html>
+
+body {
+  background-color: black;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.poster {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 100px;
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+}
+
+.motivation-img {
+  border: 5px solid white;
+  width: 100%;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Motivation Meme</title>
+  <link rel="stylesheet" href="./solution.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="poster">
+    <img class="motivation-img" src="./assets/images/daenerys.jpeg" src="daenerys with egg" />
+    <h1>That Special Moment</h1>
+    <p>When you find the perfect avocado at the supermarket</p>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
