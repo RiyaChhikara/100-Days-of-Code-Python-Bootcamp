@@ -21,8 +21,8 @@ from datetime import datetime
 pixela_endpoint = "https://pixe.la/v1/users"
 
 # Constants are usually written in all capital letters.
-USERNAME = "riyachhikara"
-TOKEN = "hdid3453f3f3ff3f33"
+USERNAME = "
+TOKEN = ""
 GRAPHID = "graph2023"
 
 # --------------------------- STEP 1----------------------------------------------------------#
